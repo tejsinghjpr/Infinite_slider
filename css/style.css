@@ -1,0 +1,75 @@
+.carousel {
+	width: 500px;
+	height: 317px;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+}
+.carousel a {
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #fff;
+	font-family: Arial;
+}
+.carousel .pre, .carousel .next {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	z-index: 100;
+}
+.carousel .pre {
+	left: 5px;
+}
+.carousel .next {
+	right: 5px;
+}
+.carousel ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: relative;
+}
+.carousel ul li {
+	float: left;
+	position: relative;
+}
+.carousel ul li.current {
+	z-index: 99;
+	display: block;
+}
+.carousel ul li span {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background: rgba(0,0,0,0.5);
+	padding: 5px 10px;
+	color: #fff;
+}
+.carousel ul li img {
+	display: block;
+}
+.carousel .slider-pagination {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	width: 100%;
+	text-align: left;
+}
+.carousel .slider-pagination a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	margin-right: 3px;
+	font-family: arial;
+	text-indent: -999px;
+	overflow: hidden;
+}
+.carousel .slider-pagination a:hover, .carousel .slider-pagination a.active {
+	background: royalblue;
+}
